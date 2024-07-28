@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("Images/banner.jpg");
+    height: 103vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2503 de px, 100vw);
+}
+
+.main .box{
+    height: 103vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+    height: 60px;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    padding: 22px 0 0 0;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    display: flex;
+    height: calc(100% - 60px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 30px;
+    text-align: center;
+}
+
+/* Ye bhi sahi hai but hum nth leke karenge */
+
+/* .hero :first-child{
+    font-size: 48px;
+    font-weight: 1000;
+    font-style: normal;
+} */
+
+/* Ye iss tarah se likhna hai. And isme ek aur concept add kiye hai hum. .hero ke baad humne > ye use kiya hai. agar hum isko use 
+nahi karte toh na toh humara jo INPUT and GET STARTED wala section hai wo bhi bada bada ho jata. Toh > iska matlab hai
+ki hum immediate child ki baat kar rahe hai. */
+
+.hero> :nth-child(1){
+    font-size: 48px;
+    font-weight: 1000;
+    font-style: normal;
+    text-align: center;
+}
+
+/* YE DONO WRONG HAI. Second Child aur thirs child ke liye iss tarah se nahi likhte hai.  */
+/* .hero :second-child{
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero :third-child{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/* Iss tarah se likhte hai hum */
+
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    padding: 17px;
+    text-align: center;
+}
+
+.sepration{
+    height: 8px;
+    background-color: rgb(56, 56, 56);
+}
+
+.btn{
+    background-color: white;
+    font-weight: bold;
+    padding: 9px 23px;
+    border-radius: 7px;
+    color: white;
+}
+
+.btn-signup{
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    padding: 9px 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-signup:hover {
+    background-color: rgb(179, 3, 3);
+    color: rgb(255, 255, 255);
+}
+
+.btn-lang{
+    background-color: rgba(23, 23, 23, 0.65);
+    color: white;
+    border-radius: 7px;
+    padding: 9px 26px;
+    border: solid 1px rgba(255, 255, 255, 0.345);
+    cursor: pointer;
+}
+
+.btn-lang:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: solid 1px rgba(0, 0, 0, 0.623);;
+}
+
+.hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 26px 14px 19px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.btn-get{
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    padding: 14px 30px;
+    font-size: larger;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-get {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-icon {
+    width: 21px;
+    height: auto;
+    margin-left: 8px;
+}
+
+
+.btn-get:hover {
+    background-color: rgb(179, 3, 3);
+    color: rgb(255, 255, 255);
+}
+
+.main input{
+    background-color: rgba(23, 23, 23, 0.65);
+    color: white;
+    border-radius: 7px;
+    padding: 18px 75px 17px 19px;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    cursor: pointer;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: center; 
+    color: white;
+    margin: auto;
+    max-width: 70vw;
+    align-items: center;
+    padding: 57px 0px;
+}
+
+@media screen and (max-width:1326px){
+
+    .firstSection{
+        flex-wrap: wrap;
+        color: white;
+    }
+}
+
+.sec1image img{
+    max-width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec1image{
+    position: relative;
+    
+}
+
+.sec1image video{
+    position: absolute;
+    top: 50px;
+    right: 27px;
+    max-width: 555px;
+}
+
+.sec2image img{
+    max-width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec2image{
+    position: relative;
+    
+}
+
+.sec2image video{
+    position: absolute;
+    top: 50px;
+    right: 95px;
+    max-width: 365px;
+}
+
+.firstSection > div :first-child{
+    display: flex;
+    flex-direction: column;
+    padding: 17px 0px;
+}
+
+
+.firstSection > div :first-child{
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+.firstSection > div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.faq{
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+}
+
+.faq h2{
+    text-align: center;
+    padding: 44px 0px 13px 0px; 
+}
+
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: #343434;
+    max-width: 72vw;
+    margin: 12px auto;
+    padding: 25px 19px 25px 19px;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.faqbox:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.questions{
+    color: rgb(228, 226, 226);
+    margin: 5px 0px 11px 0px;
+}
+
+footer{
+    color: rgb(228, 226, 226);
+    max-width: 74.5vw;
+    margin: auto;
+    padding: 44px;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a{
+    color: rgb(228, 226, 226);
+    padding: 11px 0px 0px 0px;
+    font-size: 14px;
+}
+
+@media screen and (max-width:1326px){
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    footer {
+        color: rgb(228, 226, 226);
+    }
+
+    .sec1image img{
+        max-width: 390px;
+        position: relative;
+    }
+    
+    .sec1image video{
+        position: absolute;
+        max-width: 324px;
+    }
+
+    .sec2image img{
+        max-width: 390px;
+        position: relative;
+    }
+    
+    .sec2image video{
+        position: absolute;
+        max-width: 221px;
+        top: 44px;
+        right: 78px;
+    }
+
+    .hero> :nth-child(1){
+        font-size: 29px;
+    }
+    
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+
+    nav img{
+        width: 90px;
+        position: relative;
+        z-index: 10;
+        padding: 22px 0 0 0;
+    }
+
+    .hero {
+        height: calc(100% - 62px);
+    }
+
+    .main {
+        height: 84vh;
+    }
+
+    .hero-button {
+        padding: 0px 19px 19px 19px;
+        font-size: 16px;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        max-width: 92vw;
+    }
+
+    .main .box {
+        height: 83.88vh;
+    
+}
